@@ -5,10 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scratch</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .fixed-header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        body {
+            padding-top: 70px;
+        }
+    </style>
 </head>
 
 <body>
-    Under construction
+    <div class="fixed-header">
+        <h1>This is My Custom Website!</h1>
+    </div>
+
+    <div style="padding: 20px;">
+        Under construction
     <h1>YouTube</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sxjgL64czRY?si=a0aWl_KWEWlgit4M"
         title="YouTube video player" frameborder="0"
@@ -37,6 +69,7 @@
         </object></div>
     <script
         type='text/javascript'>                    var divElement = document.getElementById('viz1765220206348'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1200px'; vizElement.style.height = '800px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1200px'; vizElement.style.height = '800px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1800px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
 </body>
 
 </html>

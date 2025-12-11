@@ -9,6 +9,7 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
         }
         .fixed-header {
             position: fixed;
@@ -28,6 +29,53 @@
             font-weight: 600;
             letter-spacing: 0.5px;
         }
+        .fixed-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .fixed-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-left: 10px;
+        }
+        .fixed-header a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .fixed-header div {
+            display: flex;
+            gap: 10px;
+        }
+        .section-header {
+            text-align: center;
+            margin: 18px 0 12px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #667eea;
+        }
+        .section-header h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            color: #333;
+            font-weight: 700;
+        }
+        .section-header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #667eea;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            margin: 16px 0;
+        }
         body {
             padding-top: 70px;
         }
@@ -36,19 +84,32 @@
 
 <body>
     <div class="fixed-header">
-        <h1>This is My Custom Website!</h1>
+        <h1>Thank You For Visiting Branson's Custom Site!</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="game.html">Game!</a>
+        </div>
     </div>
 
     <div style="padding: 20px;">
-        Under construction
-    <h1>YouTube</h1>
+        <div class="section-header">
+            <h1>Professional Interests:</h1>
+            <h2>Human Resources</h2>
+        </div>
+    <div class="centered-content">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sxjgL64czRY?si=a0aWl_KWEWlgit4M"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-    <h1>Tableau</h1>
-    <div class='tableauPlaceholder' id='viz1765220206348' style='position: relative'><noscript><a href='#'><img
+    <div class="section-header">
+        <h1>Personal Interests:</h1>
+        <h2>College Basketball</h2>
+    </div>
+    <div class="centered-content">
+    <div class='tableauPlaceholder' id='viz1765220206348' style='position: relative; border: 1px solid #000; padding: 6px; border-radius: 6px; background: #fff; display: inline-block;'><noscript><a href='#'><img
                     alt='ARE COLLEGE BASKETBALL HEAD COACHES OVERPAID?ONLY 50% NCAA MEN&#39;S BASKETBALL HEAD COACHES EARNING AT LEAST $1 MILLION MADE THE 2019 NCAA TOURNAMENT '
                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NC&#47;NCAABasketballSalaries&#47;NCAABasketballSalaries&#47;1_rss.png'
                     style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
@@ -68,8 +129,44 @@
             <param name='language' value='en-US' />
         </object></div>
     <script
-        type='text/javascript'>                    var divElement = document.getElementById('viz1765220206348'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1200px'; vizElement.style.height = '800px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1200px'; vizElement.style.height = '800px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1800px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        type='text/javascript'>                    var divElement = document.getElementById('viz1765220206348'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1200px'; vizElement.style.height = '800px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1200px'; vizElement.style.height = '800px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '800px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
-</body>
 
-</html>
+    <!-- Other Personal Interests section: centered ordered list with nested unordered lists -->
+    <div class="section-header">
+        <h1>Other Personal Interests:</h1>
+        <h2>Greatest College Football Teams Ever</h2>
+    </div>
+    <div class="centered-content">
+        <ol style="max-width: 850px; text-align: left;">
+            <li>Clemson, 1981
+                <ul>
+                    <li>12-0</li>
+                    <li>National Champions</li>
+                </ul>
+            </li>
+            <li>Clemson, 2016
+                <ul>
+                    <li>14-1</li>
+                    <li>National Champions</li>
+                </ul>
+            </li>
+            <li>Clemson, 2018
+                <ul>
+                    <li>15-0</li>
+                    <li>National Champions</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Centered Clemson image -->
+    <div class="centered-content" style="margin-top: 8px;">
+        <img src="https://clemsontigers.com/wp-content/uploads/2019/01/CELEBRATIONS-01-07-18-National-Championship-Clemson-vs.-Alabama-40.jpg" alt="Clemson celebration" style="max-width:50%; height:auto; display:block; border-radius:8px; box-shadow:0 6px 14px rgba(0,0,0,0.12);" />
+    </div>
+
+    <div style="text-align: center; padding: 30px 0 20px 0; margin-top: 40px; border-top: 1px solid #ddd;">
+        <a href="#" onclick="window.scrollTo(0, 0); return false;" style="color: #667eea; text-decoration: none; font-weight: 600; font-size: 16px;">Jump to top</a>
+    </div>
+    </div>
+</body></html>
